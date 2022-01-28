@@ -117,3 +117,46 @@ form button:hover {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
+
+/* style the filter dropdown  */
+/* this removes all built-in styles from using select element */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+/* style the div */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: blue;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* add arrow back */
+
+.select::after {
+  /* adds the arrow */
+  content: "\25BC";
+  /* position the arrow inside the box */
+  position: absolute;
+  background: darkblue;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  opacity: 0.8;
+}
