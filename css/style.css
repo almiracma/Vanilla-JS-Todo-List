@@ -111,3 +111,9 @@ form button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
 }
+
+/* added fall class inside the function and this will be its animation */
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}

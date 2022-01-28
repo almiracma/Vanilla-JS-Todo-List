@@ -60,7 +60,11 @@ function deleteCheck(e) {
   if (item.classList[0] === "delete-btn") {
     //   remove its parent
     const todo = item.parentElement;
-    todo.remove();
+    todo.classList.add("fall");
+    //add event listener to only remove when the animation is completed
+    todo.addEventListener("transitionend", function () {
+      todo.remove();
+    });
   }
 
   //check mark
