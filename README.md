@@ -1,14 +1,14 @@
 # Vanilla Javascript Todo List
 
-In this project, I'm going to build a todo list in Vanilla Javascript and soon after I'm going do a React version.
+In this project, I built a todo list in Vanilla Javascript.
 
-I created a a form with an input box and a button that contains an "add" icon.
+I created a form with an input box and a button that contains an "add" icon.
 
 I also created a div container and an empty list so I can insert the todo list dynamically.
 
-In Javascript, I called the input box, submit button, and todo-list classes so I can use it to dynamically add the user input.
+In Javascript, I called the input box, submit button, and todo-list classes so I can use them to dynamically add the user input.
 
-First, I added event listener on the submit/add button.
+First, I added an event listener on the submit or add button.
 Then I added a function named addTodo where I dynamically added a div with a class of "todo".
 
 Right after that, I created a list element where the user input will be attached. I used _newTodo.innerText = todoInput.value_ , added a class "todo-item" using classList, and inserted it in the todo div using appendChild().
@@ -28,7 +28,7 @@ After dynamically adding basically these elements:
 
 Next, I added an event listener to the delete button and named the function deleteCheck.
 
-I used e.target to find the "delete-btn" class, and if it did, remove its parent element - which deletes the box itself.
+I used e.target to find the "delete-btn" class, and if it did, it should remove its parent element - which deletes the box itself.
 
 I had to put pointer-cursor: none on the icons so it doesn't get in the way when clicking on the button.
 
@@ -37,3 +37,5 @@ On the complete-btn, I did the same except that I added a class "completed "and 
 Then on the class "completed" I added the styles:
 text-decoration: line-through;
 opacity: 0.5;
+
+Lastly, I noticed that a list gets added even when it's empty. So I added a function to insert a placeholder that says "Please add an item!"
