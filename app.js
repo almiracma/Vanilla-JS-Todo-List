@@ -42,7 +42,13 @@ function addTodo(event) {
   todoDiv.appendChild(deleteButton);
 
   //append to list
-  todoList.appendChild(todoDiv);
+  if (todoInput.value === "") {
+    todoInput.placeholder = "Please add an item!";
+  } else {
+    todoInput.placeholder = "";
+    todoList.appendChild(todoDiv);
+  }
+
   //this deletes the text in the box right after it was added
   todoInput.value = "";
 }

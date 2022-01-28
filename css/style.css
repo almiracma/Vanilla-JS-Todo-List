@@ -104,3 +104,10 @@ form button:hover {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+::placeholder {
+  color: red;
+  opacity: 0.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
