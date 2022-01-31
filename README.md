@@ -38,4 +38,6 @@ Then on the class "completed" I added the styles:
 text-decoration: line-through;
 opacity: 0.5;
 
-Lastly, I noticed that a list gets added even when it's empty. So I added a function to insert a placeholder that says "Please add an item!"
+I noticed that a list gets added even when it's empty. So I added a function to insert a placeholder that says "Please add an item!"
+
+Also, I added a function that saves data to the local storage.
